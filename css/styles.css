@@ -1,4 +1,11 @@
-@charset "UTF-8";
+@font-face {
+  font-family: "Gen";
+  src: url("../fonts/GenBkBasB.ttf");
+}
+@font-face {
+  font-family: "Yes";
+  src: url("../fonts/YesevaOne-Regular_v2.otf");
+}
 * {
   margin: 0;
 }
@@ -7,33 +14,34 @@ ul {
   padding-inline-start: 0px;
 }
 
-.header {
-  margin-bottom: -3px;
-}
-
-.header-h1 {
-  color: white;
-  text-align: center;
-  position: relative;
-  margin-bottom: -100px;
-  transform: translateY(-150%);
-  letter-spacing: 15px;
-  font-size: 5em;
-}
-
 .background-img {
   z-index: -1;
   width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.logo-img {
+  filter: invert(1);
+}
+
+.logo-text {
+  flex: 0 0 10px;
+  color: white;
+  font-family: "Yes";
+  font-size: 35px;
+  position: absolute;
 }
 
 .navbar {
   position: absolute;
   top: 0px;
   width: 100%;
-}
-
-#logo {
-  display: none;
+  display: flex;
 }
 
 .hamburger {
@@ -49,24 +57,23 @@ ul {
   background-color: green;
 }
 
-.logo {
-  margin: 0 50px !important;
+.header-social {
+  height: 20px;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3%;
 }
 .nav-menu .nav-item {
   list-style-type: none;
   margin: 0 20px;
 }
 .nav-menu .nav-item .nav-link {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-family: "Lato-Bold";
+  font-family: "Yes";
 }
 .nav-menu .nav-item .nav-link:hover {
   color: green;
@@ -75,45 +82,10 @@ ul {
   color: green;
 }
 
-.breadcrumb {
-  max-width: 1400px;
-  margin: 30px auto;
-}
-.breadcrumb .breadcrumb-ul {
-  padding: 10px 16px;
-  list-style: none;
-}
-.breadcrumb .breadcrumb-li {
-  display: inline;
-  font-size: 18px;
-}
-.breadcrumb #current-page {
-  font-family: "Lato-Bold";
-  color: gray;
-}
-.breadcrumb .breadcrumb-a {
-  color: green;
-  text-decoration: none;
-}
-.breadcrumb .breadcrumb-a::after {
-  padding: 8px;
-  padding-right: 0;
-  color: gray;
-  content: "/ ";
-}
-.breadcrumb .breadcrumb-a:hover {
-  color: #001a00;
-}
-
 @media screen and (max-width: 1024px) {
   .background-img {
     object-fit: cover;
     height: 400px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .header-h1 {
-    font-size: 4em;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -124,7 +96,7 @@ ul {
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    padding: 50px 0px !important;
+    padding: 50px 0px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -141,21 +113,6 @@ ul {
 
   .menu-item {
     padding: 5px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  #logo {
-    position: absolute;
-    display: block;
-    top: 10px;
-    left: 20px;
-  }
-
-  .nav-separator {
-    display: none;
   }
 
   .hamburger {
@@ -177,19 +134,5 @@ ul {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-}
-@media screen and (max-width: 500px) {
-  .header-h1 {
-    font-size: 3em;
-  }
-
-  .breadcrumb {
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .header-h1 {
-    font-size: 2em;
   }
 }
