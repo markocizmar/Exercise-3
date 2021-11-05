@@ -42,6 +42,7 @@ ul {
   top: 0px;
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .hamburger {
@@ -54,7 +55,7 @@ ul {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: green;
+  background-color: #DAB33E;
 }
 
 .header-social {
@@ -66,20 +67,44 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.nav-menu .nav-item {
+
+.nav-item {
   list-style-type: none;
-  margin: 0 20px;
+  margin: 0 25px;
 }
-.nav-menu .nav-item .nav-link {
+
+.nav-link {
   color: white;
   text-decoration: none;
   font-family: "Yes";
+  font-size: 20px;
 }
-.nav-menu .nav-item .nav-link:hover {
-  color: green;
+.nav-link:hover {
+  color: #DAB33E;
 }
-.nav-menu .nav-item .nav-link:focus {
-  color: green;
+.nav-link:focus {
+  color: #DAB33E;
+}
+
+.header-h1 {
+  position: absolute;
+  color: white;
+  font-size: 110px;
+  text-align: center;
+  font-family: "Yes";
+  text-shadow: 1px 2px black;
+  font-weight: normal;
+  width: 70%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.header-decor {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -88,7 +113,7 @@ ul {
     height: 400px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -105,6 +130,10 @@ ul {
   }
   .nav-menu.active {
     left: 0;
+  }
+
+  .nav-link {
+    color: black;
   }
 
   .nav-item {
