@@ -31,9 +31,6 @@
   font-size: 18px;
   color: $gray;
 }
-.right-food-cook {
-  margin: 5% 0 0 10%;
-}
 
 @media screen and (max-width: 1200px) {
   .right-food {
@@ -41,5 +38,29 @@
   }
   .right-food-img {
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .right-food-dish {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .right-food-p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .right-food-h1 {
+    font-size: 35px;
+  }
+  .right-food-decor {
+    width: 90%;
+  }
+  .right-food-cook {
+    width: 70%;
   }
 }
