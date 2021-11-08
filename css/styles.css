@@ -360,7 +360,7 @@ ul {
   background-size: cover;
   background-position: center;
   color: white;
-  height: 800px;
+  padding: 100px 0px;
 }
 
 .fine-ingredients {
@@ -462,7 +462,6 @@ ul {
 
 .menu-limiter {
   display: flex;
-  flex-wrap: wrap;
   width: 1400px;
   margin: auto;
   justify-content: space-evenly;
@@ -521,20 +520,20 @@ ul {
   background-image: url("../img/bg-rev.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vw;
+  padding: 100px 0px;
   color: white;
 }
 
 .review {
   position: relative;
-  top: 20%;
+  top: 15%;
   left: 25%;
   width: 50%;
   background-image: url("../img/guest-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 70px 0px;
+  padding: 5% 0;
 }
 
 .review-h1 {
@@ -544,10 +543,10 @@ ul {
 
 .review-p {
   margin: 0px auto 30px;
-  padding: 0px 100px;
+  padding: 0px 10%;
   text-align: center;
   line-height: 45px;
-  font-size: 24px;
+  font-size: 25px;
   color: #dde0df;
 }
 
@@ -556,6 +555,28 @@ ul {
   color: #dde0df;
 }
 
+@media screen and (max-width: 1500px) {
+  .review {
+    left: 15%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .review {
+    left: 10%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .review-p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .review-decor {
+    width: 100%;
+  }
+}
 .desert-container {
   width: 100%;
   font-family: "Yes";
