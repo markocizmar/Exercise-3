@@ -7,7 +7,7 @@
 }
 .desert-limiter {
   display: flex;
-  padding: 50px 0px;
+  padding: 100px 0px;
   justify-content: center;
 }
 .desert-left {
@@ -28,7 +28,48 @@
   font-family: "Lato";
   width: 500px;
   margin: auto;
+  line-height: 25px;
+}
+.desert-label {
+  color: $yellow;
 }
 .desert-form {
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px;
+  justify-content: space-evenly;
+  text-align: start;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.desert-input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+
+  &:focus {
+    border: 1px solid $yellow;
+  }
+
+  &::placeholder {
+    font-style: italic;
+  }
+}
+.desert-item {
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+.desert-btn {
+  background-color: $yellow;
+  width: 200px;
+  height: 30px;
+  border: none;
+  font-family: "Lato";
+  color: white;
+
+  &:hover {
+    background-color: darken($color: $yellow, $amount: 20);
+  }
 }

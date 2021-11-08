@@ -48,8 +48,10 @@
 
       <h1 class="header-h1">the right ingredients for the right food</h1>
       <img class="header-decor" src="./img/decoration.png" alt="decoration" />
-      <button class="btn-book">BOOK A TABLE</button>
-      <button class="btn-see">SEE THE MENU</button>
+      <div class="btn-component">
+        <button class="btn-book">BOOK A TABLE</button>
+        <button class="btn-see">SEE THE MENU</button>
+      </div>
     </header>
 
     <section class="right-food-container">
@@ -141,7 +143,8 @@
                 Refreshing traditional cucumber and garlic yoghurt dip.
               </p>
             </div>
-            <div class="appetisers-item">
+            <p class="special">Special</p>
+            <div class="appetisers-item appetisers-special">
               <div class="appetisers-name">
                 <h2 class="appetisers-h2">Greek Salad</h2>
                 <h2 class="appetisers-h2">$5.50</h2>
@@ -197,7 +200,8 @@
                 Refreshing traditional cucumber and garlic yoghurt dip.
               </p>
             </div>
-            <div class="appetisers-item">
+            <p class="special">Special</p>
+            <div class="appetisers-item appetisers-special">
               <div class="appetisers-name">
                 <h2 class="appetisers-h2">Roast Lamb</h2>
                 <h2 class="appetisers-h2">$5.50</h2>
@@ -265,16 +269,48 @@
             freshly baked food.
           </p>
           <div class="desert-form">
-            Name:
-            <input type="text" />
-            E-mail:
-            <input type="email" name="" id="" /><br />
-            Date:
-            <input type="datetime" name="" id="" />
-            Party number:
-            <input type="text" /><br />
-            <button>Book now!</button>
+            <div>
+              <div class="desert-item">
+                <label class="desert-label">Name</label>
+                <br />
+                <input
+                  class="desert-input"
+                  type="text"
+                  placeholder="your name *"
+                />
+              </div>
+              <div class="desert-item">
+                <label class="desert-label">E-mail</label>
+                <br />
+                <input
+                  class="desert-input"
+                  type="email"
+                  placeholder="your e-mail *"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="desert-item">
+                <label class="desert-label">Date</label>
+                <br />
+                <input
+                  class="desert-input"
+                  type="datetime"
+                  placeholder="date *"
+                />
+              </div>
+              <div class="desert-item">
+                <label class="desert-label">Party number</label>
+                <br />
+                <input
+                  class="desert-input"
+                  type="text"
+                  placeholder="party number"
+                />
+              </div>
+            </div>
           </div>
+          <button class="desert-btn">Book now!</button>
         </div>
       </div>
     </section>

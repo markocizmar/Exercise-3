@@ -28,6 +28,20 @@
   line-height: 30px;
   margin-bottom: 20px;
 }
+.appetisers-special {
+  padding: 5px;
+  border: 1px solid $yellow;
+}
+.special {
+  position: relative;
+  background-color: $yellow;
+  color: white;
+  width: 80px;
+  height: 22px;
+  right: -420px;
+  font-family: "Lato";
+}
+
 .appetisers-name {
   display: flex;
   justify-content: space-between;
