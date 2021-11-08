@@ -1,160 +1,212 @@
-ul {
-    padding-inline-start: 0px;
+@mixin btn {
+  width: 300px;
+  height: 70px;
+  color: white;
+  background-color: transparent;
+  position: absolute;
+  font-size: larger;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.background-img {
-    z-index: -1;
-    width: 100%;
+ul {
+  padding-inline-start: 0px;
+}
+
+.header {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 900px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    margin: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
 }
 
 .logo-img {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 .logo-text {
-    flex: 0 0 10px;
-    color: white;
-    font-family: "Yes";
-    font-size: 35px;
-    position: absolute;
+  flex: 0 0 10px;
+  color: white;
+  font-family: "Yes";
+  font-size: 35px;
+  position: absolute;
+}
+
+.navbar-limiter {
+  display: flex;
+  width: 1500px;
+  justify-content: space-around;
 }
 
 .navbar {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0,
+    rgba(0, 0, 0, 1) 150%
+  );
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: $yellow;
-    }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $yellow;
+  }
 }
 
 .header-social {
-    height: 20px;
+  height: 20px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: -200px;
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item {
-    list-style-type: none;
-    margin: 0 25px;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  padding: 0px 20px;
+  height: 95%;
+  align-items: center;
+
+  &:hover {
+    border-top: 5px solid white;
+  }
 }
 
-.nav-link{
-    color: white;
-    text-decoration: none;
-    font-family: 'Yes';
-    font-size: 20px;
-
-    &:hover{
-        color: $yellow;
-    }
-
-    &:focus {
-        color: $yellow;
-    }
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Yes";
+  font-size: 20px;
 }
 
 .header-h1 {
-    position: absolute;
-    color: white;
-    font-size: 110px;
-    text-align: center;
-    font-family: "Yes";
-    text-shadow: 1px 2px black;
-    font-weight: normal;
-    width: 70%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+  color: white;
+  font-family: "Yes";
+  font-size: 110px;
+  font-weight: normal;
+  text-shadow: 1px 2px black;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 30%;
 }
 
 .header-decor {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -65%);
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.btn-book {
+  @include btn();
+  top: 75%;
+  left: 40%;
+  transform: translate(-40%, -75%);
+  border: 1px solid black;
+  background: rgba(black, 0.5);
+
+  &:hover {
+    background: rgba(black, 1);
+  }
+}
+
+.btn-see {
+  @include btn();
+  top: 75%;
+  left: 60%;
+  transform: translate(-60%, -75%);
+  border: 1px solid white;
+  background: rgba(white, 0.25);
+
+  &:hover {
+    color: black;
+    background: rgba(white, 1);
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .background-img {
-        object-fit: cover;
-        height: 400px;
-    }
+  .background-img {
+    object-fit: cover;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: -20px;
-        flex-direction: column;
-        background-color: #ffffff;
-        width: 100%;
-        padding: 50px 0px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 0;
-        z-index: 10;
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: -20px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    z-index: 10;
 
-        &.active {
-            left: 0;
-        }
+    &.active {
+      left: 0;
     }
+  }
 
-    .nav-link {
-        color: black;
-    }
+  .nav-link {
+    color: black;
+  }
 
-    .nav-item {
-        width: 100%;
-    }
+  .nav-item {
+    width: 100%;
+    padding: 5px;
+  }
 
-    .menu-item {
-        padding: 5px;
-    }
+  .hamburger {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 15;
+    top: 10px;
+    right: 20px;
+  }
 
-    .hamburger {
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        z-index: 15;
-        top: 10px;
-        right: 20px;
-    }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }

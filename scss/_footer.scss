@@ -1,0 +1,33 @@
+.footer-container {
+  width: 100%;
+  font-family: "Yes";
+  background-color: $black;
+  height: 500px;
+  color: white;
+}
+.footer-limiter {
+  display: flex;
+  padding: 50px 0px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer-h1 {
+  font-weight: normal;
+}
+
+.footer-p {
+  font-family: "Lato";
+  width: 400px;
+  line-height: 25px;
+}
+
+.footer-social {
+  margin-top: 50px;
+}
+.footer-left {
+}
+.footer-middle {
+}
+.footer-right {
+}

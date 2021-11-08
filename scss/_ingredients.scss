@@ -1,0 +1,35 @@
+.fine-ingredients-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/bg-ing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 900px;
+}
+.fine-ingredients {
+  position: relative;
+  top: 20%;
+  left: 55%;
+  width: 600px;
+  background-color: rgba($color: black, $alpha: 0.5);
+  text-align: center;
+  padding: 70px 0px;
+}
+.fine-h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+.fine-p {
+  font-family: "Lato";
+
+  width: 500px;
+  margin: 30px auto;
+  font-family: "Lato";
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+}
+.fine-img {
+  margin: 20px;
+}

@@ -1,0 +1,36 @@
+.reviews-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/bg-rev.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  color: white;
+}
+.review {
+  position: relative;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  background-image: url("../img/guest-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 70px 0px;
+}
+.review-h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+.review-p {
+  margin: 0px auto 30px;
+  padding: 0px 100px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 24px;
+  color: $lightgray;
+}
+.review-span {
+  font-family: "Lato";
+  color: $lightgray;
+}

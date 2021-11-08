@@ -1,0 +1,42 @@
+.right-food-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/background-food.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-food {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.right-food-text {
+  flex: 0 0 30%;
+  text-align: center;
+  margin-left: 20%;
+  padding-top: 30px;
+}
+
+.right-food-h1 {
+  font-size: 40px;
+  color: $yellow;
+  font-weight: normal;
+}
+.right-food-p {
+  width: 500px;
+  margin: 30px auto;
+  font-family: "Lato";
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  color: $gray;
+}
+.right-food-cook {
+  margin: 5% 0 0 10%;
+}
+
+.right-food-img {
+  flex: 0 0 50%;
+}
