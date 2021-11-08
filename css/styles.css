@@ -21,7 +21,8 @@ ul {
 .header {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   height: 900px;
 }
 
@@ -36,7 +37,6 @@ ul {
 }
 
 .logo-text {
-  flex: 0 0 10px;
   color: white;
   font-family: "Yes";
   font-size: 35px;
@@ -63,9 +63,9 @@ ul {
 }
 .hamburger .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
+  width: 50px;
+  height: 5px;
+  margin: 10px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #cc9900;
@@ -106,7 +106,7 @@ ul {
 .header-h1 {
   color: white;
   font-family: "Yes";
-  font-size: 110px;
+  font-size: 6vw;
   font-weight: normal;
   text-shadow: 1px 2px black;
   width: 70%;
@@ -117,24 +117,27 @@ ul {
 }
 
 .header-decor {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -65%);
+  position: relative;
+  width: 100%;
+  top: 35%;
+  text-align: center;
+}
+
+.btn-component {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 40%;
 }
 
 .btn-book {
   width: 300px;
   height: 70px;
   color: white;
-  background-color: transparent;
-  position: absolute;
   font-size: larger;
-  top: 75%;
-  left: 40%;
-  transform: translate(-40%, -75%);
   border: 1px solid black;
   background: rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
 }
 .btn-book:hover {
   cursor: pointer;
@@ -147,12 +150,7 @@ ul {
   width: 300px;
   height: 70px;
   color: white;
-  background-color: transparent;
-  position: absolute;
   font-size: larger;
-  top: 75%;
-  left: 60%;
-  transform: translate(-60%, -75%);
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.25);
 }
@@ -164,25 +162,44 @@ ul {
   background: white;
 }
 
-@media screen and (max-width: 1024px) {
-  .background-img {
-    object-fit: cover;
-    height: 400px;
+@media only screen and (max-width: 1400px) {
+  .header {
+    height: 800px;
+  }
+
+  .header-social {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .header {
+    height: 700px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    padding: 0px 15px;
   }
 }
 @media only screen and (max-width: 900px) {
+  .header {
+    height: 600px;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
     top: -20px;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #cc9900;
     width: 100%;
-    padding: 50px 0px;
+    padding: 100px 0px 550px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    padding: 0;
     z-index: 10;
   }
   .nav-menu.active {
@@ -190,12 +207,24 @@ ul {
   }
 
   .nav-link {
-    color: black;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+
+  .nav-final {
+    border-bottom: 1px solid #cc9900;
   }
 
   .nav-item {
     width: 100%;
     padding: 5px;
+  }
+  .nav-item:hover {
+    border-top: none;
   }
 
   .hamburger {
@@ -203,8 +232,19 @@ ul {
     display: block;
     cursor: pointer;
     z-index: 15;
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    right: 30px;
+  }
+
+  .hamburger.active {
+    width: 100%;
+    margin: auto;
+    right: auto;
+    position: fixed;
+  }
+
+  .hamburger.active .bar {
+    background-color: white;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -212,11 +252,36 @@ ul {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-social {
+    margin-right: 50px;
+  }
+
+  .btn-book,
+.btn-see {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-social {
+    margin-right: 70px;
+  }
+
+  .btn-component {
+    flex-direction: column;
+  }
+
+  .btn-book,
+.btn-see {
+    width: 80%;
+    margin: 10px auto;
   }
 }
 .right-food-container {
@@ -234,9 +299,7 @@ ul {
 }
 
 .right-food-text {
-  flex: 0 0 30%;
   text-align: center;
-  margin-left: 20%;
   padding-top: 30px;
 }
 
@@ -260,10 +323,15 @@ ul {
   margin: 5% 0 0 10%;
 }
 
-.right-food-img {
-  flex: 0 0 50%;
-}
+@media screen and (max-width: 1200px) {
+  .right-food {
+    flex-direction: column;
+  }
 
+  .right-food-img {
+    margin: auto;
+  }
+}
 .fine-ingredients-container {
   width: 100%;
   font-family: "Yes";
@@ -278,7 +346,7 @@ ul {
   position: relative;
   top: 20%;
   left: 55%;
-  width: 600px;
+  width: 30%;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 70px 0px;
@@ -291,12 +359,12 @@ ul {
 
 .fine-p {
   font-family: "Lato";
-  width: 500px;
-  margin: 30px auto;
-  font-family: "Lato";
-  text-align: center;
   line-height: 25px;
   font-size: 18px;
+  margin: 0px auto 30px;
+  padding: 0px 100px;
+  text-align: center;
+  color: #dde0df;
 }
 
 .fine-img {

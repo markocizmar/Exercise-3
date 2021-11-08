@@ -13,9 +13,7 @@
 }
 
 .right-food-text {
-  flex: 0 0 30%;
   text-align: center;
-  margin-left: 20%;
   padding-top: 30px;
 }
 
@@ -37,6 +35,11 @@
   margin: 5% 0 0 10%;
 }
 
-.right-food-img {
-  flex: 0 0 50%;
+@media screen and (max-width: 1200px) {
+  .right-food {
+    flex-direction: column;
+  }
+  .right-food-img {
+    margin: auto;
+  }
 }

@@ -11,7 +11,7 @@
   position: relative;
   top: 20%;
   left: 55%;
-  width: 600px;
+  width: 30%;
   background-color: rgba($color: black, $alpha: 0.6);
   text-align: center;
   padding: 70px 0px;
@@ -22,13 +22,12 @@
 }
 .fine-p {
   font-family: "Lato";
-
-  width: 500px;
-  margin: 30px auto;
-  font-family: "Lato";
-  text-align: center;
   line-height: 25px;
   font-size: 18px;
+  margin: 0px auto 30px;
+  padding: 0px 100px;
+  text-align: center;
+  color: $lightgray;
 }
 .fine-img {
   margin: 20px;

@@ -2,8 +2,6 @@
   width: 300px;
   height: 70px;
   color: white;
-  background-color: transparent;
-  position: absolute;
   font-size: larger;
 
   &:hover {
@@ -18,7 +16,8 @@ ul {
 .header {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   height: 900px;
 }
 
@@ -33,7 +32,6 @@ ul {
 }
 
 .logo-text {
-  flex: 0 0 10px;
   color: white;
   font-family: "Yes";
   font-size: 35px;
@@ -64,9 +62,9 @@ ul {
 
   .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 50px;
+    height: 5px;
+    margin: 10px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: $yellow;
@@ -109,7 +107,7 @@ ul {
 .header-h1 {
   color: white;
   font-family: "Yes";
-  font-size: 110px;
+  font-size: 6vw;
   font-weight: normal;
   text-shadow: 1px 2px black;
   width: 70%;
@@ -120,19 +118,24 @@ ul {
 }
 
 .header-decor {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -65%);
+  position: relative;
+  width: 100%;
+  top: 35%;
+  text-align: center;
+}
+
+.btn-component {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 40%;
 }
 
 .btn-book {
   @include btn();
-  top: 75%;
-  left: 40%;
-  transform: translate(-40%, -75%);
   border: 1px solid black;
   background: rgba(black, 0.5);
+  margin-right: 30px;
 
   &:hover {
     background: rgba(black, 1);
@@ -141,9 +144,6 @@ ul {
 
 .btn-see {
   @include btn();
-  top: 75%;
-  left: 60%;
-  transform: translate(-60%, -75%);
   border: 1px solid white;
   background: rgba(white, 0.25);
 
@@ -153,26 +153,42 @@ ul {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .background-img {
-    object-fit: cover;
-    height: 400px;
+@media only screen and (max-width: 1400px) {
+  .header {
+    height: 800px;
+  }
+  .header-social {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .header {
+    height: 700px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .nav-item {
+    padding: 0px 15px;
   }
 }
 
 @media only screen and (max-width: 900px) {
+  .header {
+    height: 600px;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
     top: -20px;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: $yellow;
     width: 100%;
-    padding: 50px 0px;
+    padding: 100px 0px 550px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    padding: 0;
     z-index: 10;
 
     &.active {
@@ -181,12 +197,25 @@ ul {
   }
 
   .nav-link {
-    color: black;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+
+  .nav-final {
+    border-bottom: 1px solid $yellow;
   }
 
   .nav-item {
     width: 100%;
     padding: 5px;
+
+    &:hover {
+      border-top: none;
+    }
   }
 
   .hamburger {
@@ -194,8 +223,19 @@ ul {
     display: block;
     cursor: pointer;
     z-index: 15;
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    right: 30px;
+  }
+
+  .hamburger.active {
+    width: 100%;
+    margin: auto;
+    right: auto;
+    position: fixed;
+  }
+
+  .hamburger.active .bar {
+    background-color: white;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -203,10 +243,33 @@ ul {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-social {
+    margin-right: 50px;
+  }
+  .btn-book,
+  .btn-see {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-social {
+    margin-right: 70px;
+  }
+  .btn-component {
+    flex-direction: column;
+  }
+  .btn-book,
+  .btn-see {
+    width: 80%;
+    margin: 10px auto;
   }
 }
