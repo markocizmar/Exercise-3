@@ -70,6 +70,21 @@
   @include arrow();
 }
 
+@media screen and (max-width: 1440px) {
+  .menu-limiter {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .menu-limiter {
+    flex-direction: column;
+  }
+  .menu {
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .menu-decor {
     display: none;
@@ -108,6 +123,24 @@
     margin: 10px 0px;
     height: 0;
     overflow: hidden;
-    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu {
+    width: 90%;
+  }
+  .special {
+    right: -75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-h1 {
+    font-size: 30px;
+  }
+  .menu-arrow-down,
+  .menu-arrow-up {
+    font-size: 20px;
   }
 }

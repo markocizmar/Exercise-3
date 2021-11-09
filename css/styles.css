@@ -527,6 +527,20 @@ ul {
   font-size: 30px;
 }
 
+@media screen and (max-width: 1440px) {
+  .menu-limiter {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .menu-limiter {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .menu-decor {
     display: none;
@@ -574,7 +588,25 @@ ul {
     margin: 10px 0px;
     height: 0;
     overflow: hidden;
-    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 550px) {
+  .menu {
+    width: 90%;
+  }
+
+  .special {
+    right: -75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu-h1 {
+    font-size: 30px;
+  }
+
+  .menu-arrow-down,
+.menu-arrow-up {
+    font-size: 20px;
   }
 }
 .reviews-container {
@@ -727,7 +759,6 @@ ul {
   width: 100%;
   font-family: "Yes";
   background-color: #191919;
-  height: 20vw;
   color: white;
 }
 
@@ -750,4 +781,31 @@ ul {
 
 .footer-social {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-limiter {
+    flex-direction: column;
+  }
+
+  .footer-left,
+.footer-middle,
+.footer-right {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-middle,
+.footer-right {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-p {
+    width: auto;
+  }
+
+  .footer-decor {
+    width: 90%;
+  }
 }
