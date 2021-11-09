@@ -1,0 +1,93 @@
+.fine-ingredients-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/bg-ing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0px;
+}
+.fine-ingredients {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  width: 35%;
+  background-color: rgba($color: black, $alpha: 0.6);
+  text-align: center;
+  padding: 70px 0px;
+}
+.fine-h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+.fine-p {
+  font-family: "Lato";
+  line-height: 25px;
+  font-size: 18px;
+  margin: 0px auto 50px;
+  padding: 0px 100px;
+  text-align: center;
+  color: $lightgray;
+}
+.fine-img {
+  margin: 20px;
+}
+
+@media screen and (max-width: 1720px) {
+  .fine-p {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .fine-ingredients {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fine-ingredients {
+    left: 15%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fine-ingredients {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fine-p {
+    margin-bottom: 10px;
+  }
+  .fine-img {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fine-ingredients-container {
+    height: 700px;
+  }
+  .fine-ingredients {
+    padding: 30px 0px;
+  }
+  .fine-p {
+    padding: 0px 20px;
+  }
+  .fine-img {
+    width: 20%;
+  }
+  .fine-decor {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fine-p {
+    font-size: 14px;
+  }
+}

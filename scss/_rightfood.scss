@@ -1,0 +1,67 @@
+.right-food-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/background-food.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-food {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.right-food-text {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.right-food-h1 {
+  font-size: 40px;
+  color: $yellow;
+  font-weight: normal;
+}
+.right-food-p {
+  width: 500px;
+  margin: 30px auto;
+  font-family: "Lato";
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  color: $gray;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-food {
+    flex-direction: column;
+  }
+  .right-food-img {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .right-food-dish {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .right-food-p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .right-food-h1 {
+    font-size: 35px;
+  }
+  .right-food-decor {
+    width: 90%;
+  }
+  .right-food-cook {
+    width: 70%;
+  }
+}

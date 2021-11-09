@@ -1,0 +1,75 @@
+.desert-container {
+  width: 100%;
+  font-family: "Yes";
+  background-image: url("../img/background-food.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.desert-limiter {
+  display: flex;
+  padding: 100px 0px;
+  justify-content: center;
+}
+.desert-left {
+  display: flex;
+  flex: 0 0 35%;
+  justify-content: space-evenly;
+}
+.desert-right {
+  flex: 0 0 35%;
+  text-align: center;
+}
+.desert-h1 {
+  color: $yellow;
+  font-weight: normal;
+  font-size: 40px;
+}
+.desert-p {
+  font-family: "Lato";
+  width: 500px;
+  margin: auto;
+  line-height: 25px;
+}
+.desert-label {
+  color: $yellow;
+}
+.desert-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-evenly;
+  text-align: start;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.desert-input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+
+  &:focus {
+    border: 1px solid $yellow;
+  }
+
+  &::placeholder {
+    font-style: italic;
+  }
+}
+.desert-item {
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+.desert-btn {
+  background-color: $yellow;
+  width: 200px;
+  height: 30px;
+  border: none;
+  font-family: "Lato";
+  color: white;
+
+  &:hover {
+    background-color: darken($color: $yellow, $amount: 20);
+  }
+}
