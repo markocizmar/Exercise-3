@@ -1,3 +1,12 @@
+@mixin arrow {
+  position: relative;
+  top: 15px;
+  right: 25px;
+  display: none;
+  font-weight: 900;
+  font-size: 30px;
+}
+
 .menu-container {
   width: 100%;
   font-family: "Yes";
@@ -56,9 +65,49 @@
   right: -420px;
   font-family: "Lato";
 }
-
-.menu-head {
+.menu-arrow-down,
+.menu-arrow-up {
+  @include arrow();
 }
 
-.menu-content {
+@media screen and (max-width: 768px) {
+  .menu-decor {
+    display: none;
+  }
+  .menu-limiter {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu {
+    margin: auto;
+    padding: 0;
+  }
+  .menu-h1 {
+    margin: 10px 0px;
+  }
+  .menu-arrow-down {
+    display: block;
+  }
+  .menu.active .menu-content {
+    height: auto;
+  }
+  .menu.active .menu-arrow-down {
+    display: none;
+  }
+  .menu.active .menu-arrow-up {
+    display: block;
+  }
+  .menu-head {
+    border-bottom: 1px solid $yellow;
+    text-align: start;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-content {
+    margin: 10px 0px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 }

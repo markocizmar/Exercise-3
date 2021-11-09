@@ -21,7 +21,7 @@ function closeMenu() {
 
 //--------ACCORDION---------//
 
-const accordion = document.getElementsByClassName("appetisers");
+const accordion = document.getElementsByClassName("menu");
 
 for (i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
