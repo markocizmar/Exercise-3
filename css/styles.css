@@ -52,7 +52,11 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, black 150%);
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0,
+    black 150%
+  );
   position: absolute;
   top: 0px;
   width: 100%;
@@ -265,7 +269,7 @@ ul {
   }
 
   .btn-book,
-.btn-see {
+  .btn-see {
     width: 200px;
   }
 }
@@ -279,7 +283,7 @@ ul {
   }
 
   .btn-book,
-.btn-see {
+  .btn-see {
     width: 80%;
     margin: 10px auto;
   }
@@ -463,27 +467,46 @@ ul {
 .menu-limiter {
   display: flex;
   width: 1400px;
+  padding: 50px 0px;
   margin: auto;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.appetisers {
+.menu {
   width: 500px;
   text-align: center;
-  margin: 100px 0;
+  padding: 30px 0px;
 }
 
-.appetisers-h1 {
+.menu-h1 {
   font-weight: normal;
   font-size: 40px;
 }
 
-.appetisers-item {
+.menu-item {
   line-height: 30px;
   margin-bottom: 20px;
 }
 
-.appetisers-special {
+.menu-food {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cc9900;
+}
+
+.menu-h2 {
+  font-weight: normal;
+}
+
+.menu-p {
+  font-family: "Lato";
+  color: black;
+  text-align: start;
+}
+
+.menu-special {
   padding: 5px;
   border: 1px solid #cc9900;
 }
@@ -496,22 +519,6 @@ ul {
   height: 22px;
   right: -420px;
   font-family: "Lato";
-}
-
-.appetisers-name {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #cc9900;
-}
-
-.appetisers-h2 {
-  font-weight: normal;
-}
-
-.appetisers-p {
-  font-family: "Lato";
-  color: black;
-  text-align: start;
 }
 
 .reviews-container {
