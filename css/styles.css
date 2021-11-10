@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gen";
   src: url("../fonts/GenBkBasB.ttf");
@@ -52,7 +53,7 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, black 150%);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, black 120%);
   position: absolute;
   top: 0px;
   width: 100%;
@@ -859,4 +860,62 @@ ul {
   .footer-decor {
     width: 90%;
   }
+}
+#about-header {
+  background-image: url(../img/aboutbg.png);
+  height: 500px;
+}
+
+.about-gradient {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, black 150%);
+  position: absolute;
+  top: 200px;
+  height: 300px;
+  width: 100%;
+}
+
+.header-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 350px;
+  left: 350px;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+  z-index: 1;
+}
+
+.about-head-h1 {
+  font-size: 90px;
+  color: white;
+  text-shadow: 1px 2px black;
+}
+
+.breadcrumb {
+  font-family: "Lato";
+}
+.breadcrumb .breadcrumb-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.breadcrumb .breadcrumb-li {
+  font-size: 18px;
+}
+.breadcrumb #current-page {
+  color: white;
+}
+.breadcrumb .breadcrumb-a {
+  color: #cc9900;
+  text-decoration: none;
+}
+.breadcrumb .breadcrumb-a::after {
+  padding: 8px;
+  padding-right: 0;
+  color: white;
+  content: "| ";
+}
+.breadcrumb .breadcrumb-a:hover {
+  color: #664d00;
 }
