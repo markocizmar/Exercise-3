@@ -14,13 +14,26 @@
 
 .jelly-div {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   font-family: "Yes";
 }
 
-.jelly-left,
+.jelly-left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .jelly-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.jelly-right-1,
+.jelly-right-2 {
   flex: 0 0 30%;
+}
+.jelly-img {
+  margin-bottom: 50px;
 }
 
 .jelly-h1 {
@@ -30,7 +43,7 @@
 }
 
 .jelly-p {
-  width: 500px;
+  width: auto;
   margin: auto;
   margin-bottom: 20px;
   color: $gray;
@@ -100,4 +113,73 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .jelly-img {
+    width: 300px;
+  }
+  .candy-div {
+    width: 90%;
+    padding: 30px;
+  }
+  .candy-p {
+    text-align: center;
+  }
+  .cookies-img {
+    width: 400px;
+  }
+  .cookies-p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .jelly-img {
+    width: 40%;
+  }
+  .jelly-right {
+    flex-direction: column;
+  }
+  .jelly-p {
+    width: 90%;
+  }
+  .candy-back {
+    width: auto;
+    padding: 30px;
+  }
+  .candy-div {
+    width: auto;
+  }
+  .candy-p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .cookies {
+    flex-direction: column;
+  }
+  .cookies-left {
+    order: 2;
+  }
+  .cookies-img {
+    width: 100%;
+  }
+  .cookies-p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .candy-h1 {
+    font-size: 35px;
+  }
+  .candy-decor {
+    width: 100%;
+  }
+  .candy-p {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .candy-p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
