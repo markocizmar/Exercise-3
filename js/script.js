@@ -28,3 +28,28 @@ for (i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
+//--------SWIPER-------//
+
+const swiper = new Swiper(".swiper", {
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+
+  clickable: true,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

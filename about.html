@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>LAMBDA</title>
   </head>
@@ -47,7 +51,7 @@
       </nav>
 
       <div class="header-breadcrumb">
-        <h1 class="about-head-h1">About us</h1>
+        <h1 class="breadcrumb-head-h1">About us</h1>
         <div class="breadcrumb">
           <ul class="breadcrumb-ul">
             <li class="breadcrumb-li">
@@ -60,77 +64,261 @@
       <div class="about-gradient"></div>
     </header>
 
-    <!-- 
+    <div class="background-big-image">
+      <section class="about-text">
+        <img
+          class="about-text-decor"
+          src="./img/decor-yellow.png"
+          alt="decoration"
+        />
+        <h1 class="about-text-h1">Just the right food</h1>
+        <p class="about-text-p">
+          Cupcake Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Provident id nemo ad, deserunt
+          <a class="about-text-a" href="#">atque blanditiis</a> est. Reiciendis
+          nesciunt fugit debitis ad perspiciatis, ipsum repudiandae impedit.
+          Nulla ullam autem ducimus iure. Lorem ipsum dolor sit amet
+          consectetur, <a class="about-text-a" href="#">adipisicing elit</a>.
+          Est hic eum commodi inventore quas libero vitae consectetur unde
+          fugiat esse laborum amet, quidem reiciendis impedit voluptatum
+          voluptates, quaerat a necessitatibus.
+        </p>
+        <p class="about-text-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus reprehenderit minima suscipit deserunt! Repellendus eos
+          nemo earum ut? Temporibus vitae cupiditate veniam. Libero hic, dolorem
+          consequuntur fuga aliquam facilis. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Saepe incidunt, vitae dicta sequi at
+          quo ea? Sed quaerat nulla earum debitis omnis, enim nostrum ut et
+          quidem quasi alias unde.
+        </p>
+        <p class="about-text-p">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magnam
+          ipsa eius cumque? Nobis dicta natus aliquam rem minus ut quam
+          laboriosam nam sit? Vel doloremque corrupti maiores non repudiandae?
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          atque, quas similique unde sequi rerum, reprehenderit soluta ex
+          adipisci eligendi enim tempore, minus quam vel provident sapiente
+          quidem nostrum. Praesentium!
+        </p>
+        <p class="about-text-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          impedit eveniet incidunt, eos commodi nihil veniam praesentium fugiat
+          voluptatibus eaque distinctio magnam, harum totam dolorem ipsam
+          voluptatem qui vel eligendi!
+        </p>
+      </section>
 
-     -->
+      <section class="about-gallery">
+        <img
+          class="gallery-decor"
+          src="./img/decor-yellow.png"
+          alt="decoration"
+        />
+        <h1 class="gallery-h1">Jelly-o chocolate muffin</h1>
 
-    <section class="desert-container">
-      <div class="desert-limiter">
-        <div class="desert-left">
-          <img id="desert-left-img" src="./img/chocolate.png" alt="desert-1" />
-          <img src="./img/cherries.png" alt="desert-2" />
-        </div>
-        <div class="desert-right">
-          <h1 class="desert-h1">Just the right food</h1>
+        <div class="gallery">
           <img
-            class="footer-decor"
-            src="./img/decor-yellow.png"
-            alt="decoration"
+            class="gallery-img"
+            src="./img/gallery1.png"
+            alt="gallery-image"
           />
-          <p class="desert-p">
-            If you've been to one of our restaurants, you've seen - and tasted -
-            what keeps our customers coming back for more.<br />
-            Perfect materials and freshly baked food. <br /><br />
-            Delicious Lambda cakes, muffins and gourmet coffees make us hard to
-            resist! Stop in today and check us out! Perfect materials and
-            freshly baked food.
-          </p>
-          <div class="desert-form">
-            <div>
-              <div class="desert-item">
-                <label class="desert-label">Name</label>
-                <br />
-                <input
-                  class="desert-input"
-                  type="text"
-                  placeholder="your name *"
-                />
-              </div>
-              <div class="desert-item">
-                <label class="desert-label">E-mail</label>
-                <br />
-                <input
-                  class="desert-input"
-                  type="email"
-                  placeholder="your e-mail *"
-                />
-              </div>
+          <img
+            class="gallery-img"
+            src="./img/gallery2.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery3.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery4.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery5.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery6.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery7.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery8.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery9.png"
+            alt="gallery-image"
+          />
+          <img
+            class="gallery-img"
+            src="./img/gallery10.png"
+            alt="gallery-image"
+          />
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery1.png"
+                alt="gallery-image"
+              />
             </div>
-            <div>
-              <div class="desert-item">
-                <label class="desert-label">Date</label>
-                <br />
-                <input
-                  class="desert-input"
-                  type="datetime"
-                  placeholder="date *"
-                />
-              </div>
-              <div class="desert-item">
-                <label class="desert-label">Party number</label>
-                <br />
-                <input
-                  class="desert-input"
-                  type="text"
-                  placeholder="party number"
-                />
-              </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery2.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery3.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery4.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery5.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery6.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery7.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery8.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery9.png"
+                alt="gallery-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-img"
+                src="./img/gallery10.png"
+                alt="gallery-image"
+              />
             </div>
           </div>
-          <button class="desert-btn">Book now!</button>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="desert-container">
+        <div class="desert-limiter">
+          <div class="desert-left">
+            <img
+              id="desert-left-img"
+              src="./img/chocolate.png"
+              alt="desert-1"
+            />
+            <img src="./img/cherries.png" alt="desert-2" />
+          </div>
+          <div class="desert-right">
+            <h1 class="desert-h1">Just the right food</h1>
+            <img
+              class="footer-decor"
+              src="./img/decor-yellow.png"
+              alt="decoration"
+            />
+            <p class="desert-p">
+              If you've been to one of our restaurants, you've seen - and tasted
+              - what keeps our customers coming back for more.<br />
+              Perfect materials and freshly baked food. <br /><br />
+              Delicious Lambda cakes, muffins and gourmet coffees make us hard
+              to resist! Stop in today and check us out! Perfect materials and
+              freshly baked food.
+            </p>
+            <div class="desert-form">
+              <div>
+                <div class="desert-item">
+                  <label class="desert-label">Name</label>
+                  <br />
+                  <input
+                    class="desert-input"
+                    type="text"
+                    placeholder="your name *"
+                  />
+                </div>
+                <div class="desert-item">
+                  <label class="desert-label">E-mail</label>
+                  <br />
+                  <input
+                    class="desert-input"
+                    type="email"
+                    placeholder="your e-mail *"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="desert-item">
+                  <label class="desert-label">Date</label>
+                  <br />
+                  <input
+                    class="desert-input"
+                    type="datetime"
+                    placeholder="date *"
+                  />
+                </div>
+                <div class="desert-item">
+                  <label class="desert-label">Party number</label>
+                  <br />
+                  <input
+                    class="desert-input"
+                    type="text"
+                    placeholder="party number"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="desert-btn">Book now!</button>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <footer class="footer-container">
       <div class="footer-limiter">
@@ -181,6 +369,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
