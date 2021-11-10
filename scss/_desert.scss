@@ -73,3 +73,51 @@
     background-color: darken($color: $yellow, $amount: 20);
   }
 }
+
+@media screen and (max-width: 1700px) {
+  #desert-left-img {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #desert-left-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .desert-left {
+    display: none;
+  }
+  .desert-right {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .desert-form {
+    flex-direction: column;
+  }
+  .desert-item {
+    width: 90%;
+    margin: auto;
+  }
+  .desert-input {
+    width: 95%;
+  }
+  .desert-p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .desert-decor {
+    width: 100%;
+  }
+  .desert-h1 {
+    font-size: 30px;
+  }
+}

@@ -27,29 +27,27 @@
 
 @media screen and (max-width: 1200px) {
   .footer-limiter {
-    flex-direction: column;
-  }
-  .footer-left,
-  .footer-middle,
-  .footer-right {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .footer-middle,
-  .footer-right {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-left {
+    order: -1;
+    flex: 1 0 100%;
+    margin-bottom: 50px;
+    .footer-p {
+      margin: auto;
+    }
   }
 }
 @media screen and (max-width: 800px) {
-  .footer-right {
-    // margin-top: 50px;
+  .footer-middle {
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .footer-p {
-    width: auto;
+    width: 90%;
   }
   .footer-decor {
     width: 90%;
