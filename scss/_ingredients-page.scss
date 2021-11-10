@@ -1,0 +1,103 @@
+.background-big-image {
+  background-image: url(../img/backgroundabout.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jelly-beans {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.jelly-div {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Yes";
+}
+
+.jelly-left,
+.jelly-right {
+  flex: 0 0 30%;
+}
+
+.jelly-h1 {
+  color: $yellow;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jelly-p {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: $gray;
+  font-family: "Lato";
+  text-align: start;
+}
+
+.candy-canes {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.candy-back {
+  background-image: url(../img/candy-canes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+  padding: 70px;
+}
+
+.candy-div {
+  width: 60%;
+  background-color: rgba($color: black, $alpha: 0.6);
+  padding: 50px;
+}
+.candy-h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Yes";
+}
+.candy-p {
+  color: $lightgray;
+  text-align: start;
+  font-size: 25px;
+  font-family: "Gen";
+  line-height: 40px;
+}
+
+.cookies {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.cookies-right,
+.cookies-left {
+  flex: 0 0 35%;
+}
+
+.cookies-h1 {
+  color: $yellow;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.cookies-p {
+  width: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  color: $gray;
+  font-size: 20px;
+  font-family: "Lato";
+  text-align: start;
+}
+
+@media screen and (max-width: 1050px) {
+}

@@ -15,63 +15,9 @@
   width: 100%;
 }
 
-.header-breadcrumb {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: 350px;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 1;
-}
-
-.about-head-h1 {
-  font-size: 90px;
-  color: white;
-  text-shadow: 1px 2px black;
-}
-
-.breadcrumb {
-  font-family: "Lato";
-
-  .breadcrumb-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .breadcrumb-li {
-    font-size: 18px;
-  }
-
-  #current-page {
-    color: white;
-  }
-
-  .breadcrumb-a {
-    color: $yellow;
-    text-decoration: none;
-
-    &::after {
-      padding: 8px;
-      padding-right: 0;
-      color: white;
-      content: "|\00a0";
-    }
-
-    &:hover {
-      color: darken($color: $yellow, $amount: 20);
-    }
-  }
-}
-
 .about-text {
   width: 100%;
-  background-image: url(../img/background-food.png);
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 50px;
 }
 .about-text-decor {
@@ -90,6 +36,7 @@
   text-align: start;
   margin-bottom: 20px;
   font-family: "Lato";
+  color: $gray;
 }
 .about-text-a {
   color: $yellow;
@@ -102,11 +49,7 @@
 
 .about-gallery {
   width: 100%;
-  background-image: url(../img/background-food.png);
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 50px;
 }
 .gallery-decor {
