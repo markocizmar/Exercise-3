@@ -1,0 +1,24 @@
+.menu-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-selector {
+  display: flex;
+  flex-direction: column;
+  font-family: "Yes";
+  flex: 0 0 20%;
+}
+.menu-submenu {
+  border-bottom: 1px solid $yellow;
+  color: $yellow;
+  font-size: 40px;
+  margin: 10px;
+
+  &:hover {
+    background-color: transparentize($color: $yellow, $amount: 0.8%);
+  }
+}
+.menu-view {
+  flex: 0 0 60%;
+}

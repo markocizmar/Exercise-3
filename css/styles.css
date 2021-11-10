@@ -170,7 +170,7 @@ ul {
   flex-direction: row;
   position: relative;
   top: 350px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   z-index: 1;
 }
@@ -1254,6 +1254,10 @@ ul {
     width: 90%;
   }
 
+  .candy-canes {
+    margin-bottom: 50px;
+  }
+
   .candy-back {
     width: auto;
     padding: 30px;
@@ -1302,4 +1306,29 @@ ul {
     font-size: 16px;
     line-height: 25px;
   }
+}
+.menu-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-selector {
+  display: flex;
+  flex-direction: column;
+  font-family: "Yes";
+  flex: 0 0 20%;
+}
+
+.menu-submenu {
+  border-bottom: 1px solid #cc9900;
+  color: #cc9900;
+  font-size: 40px;
+  margin: 10px;
+}
+.menu-submenu:hover {
+  background-color: rgba(204, 153, 0, 0.2);
+}
+
+.menu-view {
+  flex: 0 0 60%;
 }
