@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>LAMBDA</title>
   </head>
@@ -60,9 +64,152 @@
       <div class="about-gradient"></div>
     </header>
 
-    <!-- 
+    <section class="about-text">
+      <img
+        class="about-text-decor"
+        src="./img/decor-yellow.png"
+        alt="decoration"
+      />
+      <h1 class="about-text-h1">Just the right food</h1>
+      <p class="about-text-p">
+        Cupcake Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Provident id nemo ad, deserunt
+        <a class="about-text-a" href="#">atque blanditiis</a> est. Reiciendis
+        nesciunt fugit debitis ad perspiciatis, ipsum repudiandae impedit. Nulla
+        ullam autem ducimus iure. Lorem ipsum dolor sit amet consectetur,
+        <a class="about-text-a" href="#">adipisicing elit</a>. Est hic eum
+        commodi inventore quas libero vitae consectetur unde fugiat esse laborum
+        amet, quidem reiciendis impedit voluptatum voluptates, quaerat a
+        necessitatibus.
+      </p>
+      <p class="about-text-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        voluptatibus reprehenderit minima suscipit deserunt! Repellendus eos
+        nemo earum ut? Temporibus vitae cupiditate veniam. Libero hic, dolorem
+        consequuntur fuga aliquam facilis. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Saepe incidunt, vitae dicta sequi at quo
+        ea? Sed quaerat nulla earum debitis omnis, enim nostrum ut et quidem
+        quasi alias unde.
+      </p>
+      <p class="about-text-p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magnam
+        ipsa eius cumque? Nobis dicta natus aliquam rem minus ut quam laboriosam
+        nam sit? Vel doloremque corrupti maiores non repudiandae? Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Recusandae atque, quas
+        similique unde sequi rerum, reprehenderit soluta ex adipisci eligendi
+        enim tempore, minus quam vel provident sapiente quidem nostrum.
+        Praesentium!
+      </p>
+      <p class="about-text-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        impedit eveniet incidunt, eos commodi nihil veniam praesentium fugiat
+        voluptatibus eaque distinctio magnam, harum totam dolorem ipsam
+        voluptatem qui vel eligendi!
+      </p>
+    </section>
 
-     -->
+    <section class="about-gallery">
+      <img
+        class="gallery-decor"
+        src="./img/decor-yellow.png"
+        alt="decoration"
+      />
+      <h1 class="gallery-h1">Jelly-o chocolate muffin</h1>
+
+      <div class="gallery">
+        <img class="gallery-img" src="./img/gallery1.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery2.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery3.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery4.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery5.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery6.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery7.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery8.png" alt="gallery-image" />
+        <img class="gallery-img" src="./img/gallery9.png" alt="gallery-image" />
+        <img
+          class="gallery-img"
+          src="./img/gallery10.png"
+          alt="gallery-image"
+        />
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              onclick="openSwiper()"
+              class="swiper-img"
+              src="./img/gallery1.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery2.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery3.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery4.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery5.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery6.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery7.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery8.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery9.png"
+              alt="gallery-image"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-img"
+              src="./img/gallery10.png"
+              alt="gallery-image"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <section class="desert-container">
       <div class="desert-limiter">
@@ -181,6 +328,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

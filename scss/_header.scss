@@ -24,6 +24,7 @@ ul {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0px;
 }
 
@@ -34,8 +35,9 @@ ul {
 .logo-text {
   color: white;
   font-family: "Yes";
-  font-size: 35px;
+  font-size: 30px;
   position: absolute;
+  margin-top: 5px;
 }
 
 .navbar-limiter {
@@ -196,6 +198,10 @@ ul {
     }
   }
 
+  .logo {
+    margin-left: -15%;
+  }
+
   .nav-link {
     width: 50%;
     margin: auto;
@@ -259,6 +265,9 @@ ul {
   .btn-see {
     width: 200px;
   }
+  .logo {
+    margin-left: -10%;
+  }
 }
 @media screen and (max-width: 500px) {
   .header-social {
@@ -271,5 +280,14 @@ ul {
   .btn-see {
     width: 80%;
     margin: 10px auto;
+  }
+  .logo {
+    margin-left: -5%;
+  }
+  .logo-img {
+    width: 80%;
+  }
+  .logo-text {
+    font-size: 25px;
   }
 }
