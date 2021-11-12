@@ -28,6 +28,7 @@ for (i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
+
 //--------SWIPER-------//
 
 const swiper = new Swiper(".swiper", {
@@ -40,7 +41,6 @@ const swiper = new Swiper(".swiper", {
     modifier: 1,
     slideShadows: true,
   },
-
   clickable: true,
   spaceBetween: 30,
   loop: true,
@@ -56,72 +56,41 @@ const swiper = new Swiper(".swiper", {
 
 //------------MENU------------//
 
-function myFunction1() {
-  const a = document.getElementById("appetisers-menu");
-  const b = document.getElementById("salads-menu");
-  const c = document.getElementById("starters-menu");
-  const d = document.getElementById("main-dishes-menu");
-  if (a.style.display == "none") {
-    a.style.display = "block";
-    b.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "none";
-  } else {
-    a.style.display = "block";
-    b.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "none";
-  }
+const btn = document.querySelectorAll(".menu-submenu");
+const view = document.querySelectorAll(".menu-view");
+
+function hideView(array) {
+  Array.from(array).forEach((el) => {
+    el.classList.remove("show");
+  });
 }
 
-function myFunction2() {
-  const a = document.getElementById("appetisers-menu");
-  const b = document.getElementById("salads-menu");
-  const c = document.getElementById("starters-menu");
-  const d = document.getElementById("main-dishes-menu");
-  if (b.style.display == "none") {
-    b.style.display = "block";
-    a.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "none";
-  } else {
-    b.style.display = "block";
-    a.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "none";
-  }
+function showView(id, e) {
+  hideView(btn);
+  hideView(view);
+  document.getElementById(id).classList.add("show");
 }
-function myFunction3() {
-  const a = document.getElementById("appetisers-menu");
-  const b = document.getElementById("salads-menu");
-  const c = document.getElementById("starters-menu");
-  const d = document.getElementById("main-dishes-menu");
-  if (c.style.display == "none") {
-    c.style.display = "block";
-    b.style.display = "none";
-    a.style.display = "none";
-    d.style.display = "none";
-  } else {
-    c.style.display = "block";
-    b.style.display = "none";
-    a.style.display = "none";
-    d.style.display = "none";
-  }
+
+Array.from(btn).forEach((el) => {
+  el.addEventListener("click", function (e) {
+    const id = this.getAttribute("data-toggle");
+    showView(id);
+    this.classList.add("show");
+  });
+});
+
+const menu = document.querySelector(".menu-selector");
+const up = document.querySelector(".menu-select-up");
+const down = document.querySelector(".menu-select-down");
+
+function selectMenu() {
+  menu.classList.toggle("active");
+  up.classList.toggle("present");
+  down.classList.toggle("present");
 }
-function myFunction4() {
-  const a = document.getElementById("appetisers-menu");
-  const b = document.getElementById("salads-menu");
-  const c = document.getElementById("starters-menu");
-  const d = document.getElementById("main-dishes-menu");
-  if (d.style.display == "none") {
-    d.style.display = "block";
-    b.style.display = "none";
-    c.style.display = "none";
-    a.style.display = "none";
-  } else {
-    d.style.display = "block";
-    b.style.display = "none";
-    c.style.display = "none";
-    a.style.display = "none";
-  }
+
+function closeMenu() {
+  menu.classList.remove("active");
+  up.classList.remove("present");
+  down.classList.add("present");
 }

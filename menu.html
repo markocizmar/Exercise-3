@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>LAMBDA</title>
   </head>
@@ -62,14 +66,27 @@
 
     <div class="background-big-image">
       <section class="menu-main-container">
+        <div class="menu-select" onclick="selectMenu()">
+          Select menu...
+          <span class="menu-select-down present">&#5167;</span>
+          <span class="menu-select-up">&#5169;</span>
+        </div>
         <div class="menu-selector">
-          <div class="menu-submenu" onclick="myFunction1()">Appetisers</div>
-          <div class="menu-submenu" onclick="myFunction2()">Salads</div>
-          <div class="menu-submenu" onclick="myFunction3()">Starters</div>
-          <div class="menu-submenu" onclick="myFunction4()">Main Dishes</div>
+          <div data-toggle="1" class="menu-submenu show" onclick="closeMenu()">
+            Appetisers
+          </div>
+          <div data-toggle="2" class="menu-submenu" onclick="closeMenu()">
+            Salads
+          </div>
+          <div data-toggle="3" class="menu-submenu" onclick="closeMenu()">
+            Starters
+          </div>
+          <div data-toggle="4" class="menu-submenu" onclick="closeMenu()">
+            Main Dishes
+          </div>
         </div>
 
-        <div class="menu-view" id="appetisers-menu">
+        <div class="menu-view show" id="1">
           <div class="menu-item">
             <div class="menu-food">
               <h2 class="menu-h2">Tzatziki</h2>
@@ -125,7 +142,7 @@
           </div>
         </div>
 
-        <div class="menu-view" id="salads-menu">
+        <div class="menu-view" id="2">
           <div class="menu-item">
             <div class="menu-food">
               <h2 class="menu-h2">Olive Special</h2>
@@ -182,7 +199,7 @@
           </div>
         </div>
 
-        <div class="menu-view" id="starters-menu">
+        <div class="menu-view" id="3">
           <div class="menu-item">
             <div class="menu-food">
               <h2 class="menu-h2">Haloumi</h2>
@@ -220,7 +237,7 @@
           </div>
         </div>
 
-        <div class="menu-view" id="main-dishes-menu">
+        <div class="menu-view" id="4">
           <div class="menu-item">
             <div class="menu-food">
               <h2 class="menu-h2">Cornfish Mackerel</h2>
@@ -336,6 +353,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
