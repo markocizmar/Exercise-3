@@ -51,6 +51,7 @@
   font-family: "Lato";
   color: black;
   text-align: start;
+  color: $gray;
 }
 .menu-special {
   padding: 5px;
@@ -62,7 +63,8 @@
   color: white;
   width: 80px;
   height: 22px;
-  right: -420px;
+  margin-left: auto;
+  margin-right: 0;
   font-family: "Lato";
 }
 .menu-arrow-down,

@@ -1,24 +1,73 @@
 .menu-main-container {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .menu-selector {
   display: flex;
   flex-direction: column;
   font-family: "Yes";
+  margin-right: 50px;
   flex: 0 0 20%;
 }
 .menu-submenu {
   border-bottom: 1px solid $yellow;
   color: $yellow;
   font-size: 40px;
-  margin: 10px;
+  padding: 10px;
 
   &:hover {
     background-color: transparentize($color: $yellow, $amount: 0.8%);
+    cursor: pointer;
   }
 }
 .menu-view {
-  flex: 0 0 60%;
+  flex: 0 0 50%;
+}
+.menu-h2 {
+  color: $yellow;
+  font-size: 25px;
+  font-family: "Yes";
+  font-weight: normal;
+}
+.item-special {
+  position: relative;
+  background-color: $yellow;
+  color: white;
+  width: 80px;
+  height: 22px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  font-family: "Lato";
+}
+.menu-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.menu-description {
+  text-align: center;
+  margin-top: 30px;
+}
+.desc-h1 {
+  color: $yellow;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: "Yes";
+  font-weight: normal;
+}
+.desc-p {
+  font-size: 18px;
+  font-family: "Lato";
+  margin-bottom: 30px;
+  text-align: start;
+  color: $gray;
+}
+
+#main-dishes-menu,
+#salads-menu,
+#starters-menu {
+  display: none;
 }

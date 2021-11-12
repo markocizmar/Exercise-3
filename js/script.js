@@ -53,3 +53,75 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+//------------MENU------------//
+
+function myFunction1() {
+  const a = document.getElementById("appetisers-menu");
+  const b = document.getElementById("salads-menu");
+  const c = document.getElementById("starters-menu");
+  const d = document.getElementById("main-dishes-menu");
+  if (a.style.display == "none") {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  } else {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  const a = document.getElementById("appetisers-menu");
+  const b = document.getElementById("salads-menu");
+  const c = document.getElementById("starters-menu");
+  const d = document.getElementById("main-dishes-menu");
+  if (b.style.display == "none") {
+    b.style.display = "block";
+    a.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  } else {
+    b.style.display = "block";
+    a.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  }
+}
+function myFunction3() {
+  const a = document.getElementById("appetisers-menu");
+  const b = document.getElementById("salads-menu");
+  const c = document.getElementById("starters-menu");
+  const d = document.getElementById("main-dishes-menu");
+  if (c.style.display == "none") {
+    c.style.display = "block";
+    b.style.display = "none";
+    a.style.display = "none";
+    d.style.display = "none";
+  } else {
+    c.style.display = "block";
+    b.style.display = "none";
+    a.style.display = "none";
+    d.style.display = "none";
+  }
+}
+function myFunction4() {
+  const a = document.getElementById("appetisers-menu");
+  const b = document.getElementById("salads-menu");
+  const c = document.getElementById("starters-menu");
+  const d = document.getElementById("main-dishes-menu");
+  if (d.style.display == "none") {
+    d.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    a.style.display = "none";
+  } else {
+    d.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    a.style.display = "none";
+  }
+}
