@@ -107,7 +107,17 @@ const aboutSwiper = new Swiper(".swiper-fullscreen", {
 const swiperAbout = document.querySelector(".swiper-fullscreen");
 const dark = document.querySelector(".dark-background");
 
-function fullscreen() {
-  swiperAbout.classList.toggle("visible");
-  dark.classList.toggle("darkened");
+function closeFullscreen() {
+  swiperAbout.classList.remove("visible");
+  dark.classList.remove("darkened");
 }
+
+const g = document.querySelectorAll(".gallery-img");
+
+Array.prototype.slice.call(g).forEach(function (item, index, arry) {
+  item.addEventListener("click", function (evt) {
+    aboutSwiper.slideTo(index + 1);
+    swiperAbout.classList.add("visible");
+    dark.classList.add("darkened");
+  });
+});
