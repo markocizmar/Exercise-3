@@ -41,7 +41,26 @@
             </li>
           </ul>
 
-          <img class="header-social" src="./img/social.png" alt="social" />
+          <div class="header-social">
+            <a href="#"
+              ><img
+                class="header-social-img"
+                src="./fonts/zondicons/twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#"
+              ><img
+                class="header-social-img"
+                src="./fonts/zondicons/yt.svg"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img
+                class="header-social-img"
+                src="./fonts/zondicons/fb.svg"
+                alt="facebook"
+            /></a>
+          </div>
           <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -118,56 +137,82 @@
         <h1 class="gallery-h1">Jelly-o chocolate muffin</h1>
 
         <div class="gallery">
-          <img
-            class="gallery-img"
-            src="./img/gallery1.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery2.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery3.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery4.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery5.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery6.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery7.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery8.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery9.png"
-            alt="gallery-image"
-          />
-          <img
-            class="gallery-img"
-            src="./img/gallery10.png"
-            alt="gallery-image"
-          />
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery1.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery2.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery3.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery4.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery5.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery6.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery7.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery8.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery9.png" alt="gallery-image" />
+          </div>
+          <div class="gallery-img" onclick="fullscreen()">
+            <img src="./img/gallery10.png" alt="gallery-image" />
+          </div>
+        </div>
+
+        <div class="dark-background">
+          <div class="swiper-fullscreen">
+            <button class="swiper-close" onclick="fullscreen()">
+              <img
+                class="swiper-close-img"
+                src="./fonts/zondicons/close.svg"
+                alt="close"
+              />
+            </button>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/gallery1.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery2.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery3.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery4.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery5.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery6.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery7.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery8.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery9.png" alt="gallery-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gallery10.png" alt="gallery-image" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
 
         <div class="swiper">
@@ -360,15 +405,29 @@
               >19th Paradise Street Sitia <br />128 Maserole Avenue</strong
             >
           </p>
-          <img
-            class="footer-social"
-            src="./img/social-white.png"
-            alt="socials"
-          />
+          <div class="footer-social">
+            <a href="#"
+              ><img
+                class="footer-social-img"
+                src="./fonts/zondicons/twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-social-img"
+                src="./fonts/zondicons/yt.svg"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-social-img"
+                src="./fonts/zondicons/fb.svg"
+                alt="facebook"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
-
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

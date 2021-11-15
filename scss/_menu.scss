@@ -1,10 +1,9 @@
 @mixin arrow {
   position: relative;
-  top: 15px;
-  right: 25px;
   display: none;
-  font-weight: 900;
-  font-size: 30px;
+  width: 50px;
+  filter: invert(61%) sepia(51%) saturate(3956%) hue-rotate(19deg)
+    brightness(101%) contrast(101%);
 }
 
 .menu-container {

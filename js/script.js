@@ -94,3 +94,20 @@ function closeMenu() {
   up.classList.remove("present");
   down.classList.add("present");
 }
+
+//---------FULLSCREEEN-GALLERY----------//
+const aboutSwiper = new Swiper(".swiper-fullscreen", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const swiperAbout = document.querySelector(".swiper-fullscreen");
+const dark = document.querySelector(".dark-background");
+
+function fullscreen() {
+  swiperAbout.classList.toggle("visible");
+  dark.classList.toggle("darkened");
+}

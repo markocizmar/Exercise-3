@@ -2,14 +2,17 @@
   display: flex;
   justify-content: center;
   padding: 50px 0px;
+  position: relative;
 }
 
 .menu-selector {
   display: flex;
+  top: 70px;
   flex-direction: column;
   font-family: "Yes";
   margin-right: 50px;
   flex: 0 0 20%;
+  z-index: 5;
 }
 .menu-submenu {
   border-bottom: 1px solid $yellow;
@@ -18,11 +21,11 @@
   padding: 10px;
 
   &:hover {
-    background-color: transparentize($color: $yellow, $amount: 0.8%);
+    background: lighten($color: $yellow, $amount: 50);
     cursor: pointer;
   }
   &.show {
-    background-color: transparentize($color: $yellow, $amount: 0.8%);
+    background-color: transparentize($color: $yellow, $amount: 0.8);
   }
 }
 .menu-view {
@@ -77,21 +80,26 @@
 .menu-select {
   width: auto;
   border-bottom: 1px solid $yellow;
-  font-family: "Yes";
   color: $yellow;
   padding: 10px;
-  font-size: 30px;
   cursor: pointer;
   display: none;
+}
+
+.menu-select-title {
+  font-weight: normal;
+  font-size: 30px;
+  font-family: "Yes";
 }
 
 .menu-select-down,
 .menu-select-up {
   position: relative;
-  float: right;
   display: none;
-  font-weight: 900;
-  font-size: 30px;
+  width: 50px;
+  float: right;
+  filter: invert(61%) sepia(51%) saturate(3956%) hue-rotate(19deg)
+    brightness(101%) contrast(101%);
 
   &.present {
     display: block;
@@ -125,10 +133,13 @@
     padding-top: 0;
   }
   .menu-select {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .menu-selector {
     display: none;
+    position: absolute;
 
     &.active {
       display: block;
@@ -148,7 +159,7 @@
       background-color: $yellow;
 
       &:hover {
-        background-color: transparentize($color: $yellow, $amount: 0.8%);
+        background-color: lighten($color: $yellow, $amount: 50);
       }
     }
   }
