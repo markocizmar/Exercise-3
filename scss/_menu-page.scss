@@ -1,24 +1,160 @@
 .menu-main-container {
   display: flex;
   justify-content: center;
+  padding: 50px 0px;
 }
 
 .menu-selector {
   display: flex;
   flex-direction: column;
   font-family: "Yes";
+  margin-right: 50px;
   flex: 0 0 20%;
 }
 .menu-submenu {
   border-bottom: 1px solid $yellow;
   color: $yellow;
   font-size: 40px;
-  margin: 10px;
+  padding: 10px;
 
   &:hover {
+    background-color: transparentize($color: $yellow, $amount: 0.8%);
+    cursor: pointer;
+  }
+  &.show {
     background-color: transparentize($color: $yellow, $amount: 0.8%);
   }
 }
 .menu-view {
-  flex: 0 0 60%;
+  display: none;
+  flex: 0 0 50%;
+
+  &.show {
+    display: block;
+  }
+}
+.menu-h2 {
+  color: $yellow;
+  font-size: 25px;
+  font-family: "Yes";
+  font-weight: normal;
+}
+.item-special {
+  position: relative;
+  background-color: $yellow;
+  color: white;
+  width: 80px;
+  height: 22px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  font-family: "Lato";
+}
+.menu-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.menu-description {
+  text-align: center;
+  margin-top: 30px;
+}
+.desc-h1 {
+  color: $yellow;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: "Yes";
+  font-weight: normal;
+}
+.desc-p {
+  font-size: 18px;
+  font-family: "Lato";
+  margin-bottom: 30px;
+  text-align: start;
+  color: $gray;
+}
+
+.menu-select {
+  width: auto;
+  border-bottom: 1px solid $yellow;
+  font-family: "Yes";
+  color: $yellow;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-select-down,
+.menu-select-up {
+  position: relative;
+  float: right;
+  display: none;
+  font-weight: 900;
+  font-size: 30px;
+
+  &.present {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu-main-container {
+    flex-direction: column;
+  }
+  .menu-selector {
+    flex-direction: row;
+    width: 100%;
+  }
+  .menu-submenu {
+    font-size: 3.5vw;
+    border-top: 1px solid $yellow;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .menu-view {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu-main-container {
+    padding-top: 0;
+  }
+  .menu-select {
+    display: block;
+  }
+  .menu-selector {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+  .menu-submenu {
+    background-color: $yellow;
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    &.show {
+      background-color: $yellow;
+
+      &:hover {
+        background-color: transparentize($color: $yellow, $amount: 0.8%);
+      }
+    }
+  }
+}
+@media screen and(max-width:300px) {
+  .desc-decor {
+    width: 100%;
+  }
 }

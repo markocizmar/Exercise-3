@@ -28,6 +28,7 @@ for (i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
+
 //--------SWIPER-------//
 
 const swiper = new Swiper(".swiper", {
@@ -40,7 +41,6 @@ const swiper = new Swiper(".swiper", {
     modifier: 1,
     slideShadows: true,
   },
-
   clickable: true,
   spaceBetween: 30,
   loop: true,
@@ -53,3 +53,44 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+//------------MENU------------//
+
+const btn = document.querySelectorAll(".menu-submenu");
+const view = document.querySelectorAll(".menu-view");
+
+function hideView(array) {
+  Array.from(array).forEach((el) => {
+    el.classList.remove("show");
+  });
+}
+
+function showView(id, e) {
+  hideView(btn);
+  hideView(view);
+  document.getElementById(id).classList.add("show");
+}
+
+Array.from(btn).forEach((el) => {
+  el.addEventListener("click", function (e) {
+    const id = this.getAttribute("data-toggle");
+    showView(id);
+    this.classList.add("show");
+  });
+});
+
+const menu = document.querySelector(".menu-selector");
+const up = document.querySelector(".menu-select-up");
+const down = document.querySelector(".menu-select-down");
+
+function selectMenu() {
+  menu.classList.toggle("active");
+  up.classList.toggle("present");
+  down.classList.toggle("present");
+}
+
+function closeMenu() {
+  menu.classList.remove("active");
+  up.classList.remove("present");
+  down.classList.add("present");
+}
